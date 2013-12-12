@@ -1,5 +1,6 @@
 
 var _ = require('underscore');
+var fs = require("fs");
 var util = require('util');
 var path = require('path');
 var discovery = require('../lib/discovery');
@@ -214,6 +215,34 @@ exports.catalogTests = {
 			});
 
 			test.done();
+		});
+	}
+}
+
+exports.admin = {
+	launch: function(test) {
+		var d = "/Users/dallinl/mobileapps/ios/scs/scs.xcassets/scs-LaunchImage.launchimage";
+		fs.readdir(d, function(err, filenames) {
+			if (err) {
+				test.done();
+			}
+			else {
+				var images = _.filter(filenames, function(filename) {
+					return path.extname(filename) == '.png';
+				});
+				images = _.map(images, function(filename) {
+					return path.join(d, filename);
+				});
+				xcassets.launchCatalog(images, function(err, info) {
+					if (err) {
+						test.done();
+					}
+					else {
+						console.log(util.inspect(info, { depth: null }));
+						test.done();
+					}
+				});
+			}
 		});
 	}
 }
