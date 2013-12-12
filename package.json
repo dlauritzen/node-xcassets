@@ -1,6 +1,6 @@
 {
 	"name": "xcassets",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Dallin Lauritzen <dallin@dallinlauritzen.com>",
 	"description": "Utility to manage XCode Asset Catalogs",
 	"main": "lib/xcassets.js",
