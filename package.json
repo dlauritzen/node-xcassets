@@ -1,25 +1,26 @@
 {
-	"name": "xcassets",
-	"version": "0.0.2",
-	"author": "Dallin Lauritzen <dallin@dallinlauritzen.com>",
-	"description": "Utility to manage XCode Asset Catalogs",
-	"main": "lib/xcassets.js",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/dlauritzen/node-xcassets.git"
-	},
-	"scripts": {
-		"test": "node test"
-	},
-	"dependencies": {
-		"async": "~0.2.9",
-		"dlutil": "~0.0.1",
-		"glob": "~3.2.7",
-		"image-size": "~0.1.16",
-		"underscore": "~1.5.2"
-	},
-	"devDependencies": {
-		"nodeunit": "~0.8.2"
-	}
+  "name": "xcassets",
+  "version": "0.0.2",
+  "author": "Dallin Lauritzen <dallin@dallinlauritzen.com>",
+  "description": "Utility to manage XCode Asset Catalogs",
+  "main": "lib/xcassets.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dlauritzen/node-xcassets.git"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "dlutil": "~0.0.1",
+    "glob": "~3.2.7",
+    "image-size": "~0.1.16",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.2",
+    "vows": "~0.7.0"
+  }
 }
