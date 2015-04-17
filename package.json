@@ -1,6 +1,6 @@
 {
   "name": "xcassets",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "Dallin Lauritzen <dallin@dallinlauritzen.com>",
   "description": "Utility to manage XCode Asset Catalogs",
   "main": "lib/xcassets.js",
@@ -10,7 +10,7 @@
     "url": "https://github.com/dlauritzen/node-xcassets.git"
   },
   "scripts": {
-    "test": "node test"
+    "test": "vows test/*.js --spec"
   },
   "dependencies": {
     "async": "~0.2.9",
