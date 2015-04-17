@@ -56,6 +56,7 @@ vows.describe('Asset Catalogs').addBatch({
                 'test/images/launch-portrait-736h@3x~iphone.png',
                 'test/images/launch-portrait@2x~ipad.png',
                 'test/images/launch-portrait~ipad.png',
+                'test/images/1188 - bonding.png',
             ];
             return xcassets.catalogs(images, this.callback);
         },
@@ -77,6 +78,12 @@ vows.describe('Asset Catalogs').addBatch({
                 assert.notEqual(src.indexOf(dest), -1, src + " vs " + dest);
             });
             assert.equal(_.size(names), 9, 'should be 9 found launch images. got ' + _.size(names));
+        },
+        'images': function(err, info) {
+            var names = info.names.image;
+            var catalog = info.catalogs.image;
+            console.log(names);
+            console.log(catalog);
         },
     }
 }).export(module);
